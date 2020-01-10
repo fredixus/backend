@@ -4,5 +4,6 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('get/<string:country_name>/<string:city_name>/<int:tentID>', views.tent, name='tent')
+    #ex.: /api/get/5/1/1
+    path('get/<str:country_id>/<str:city_id/<int:tentID>', views.tent, name='tent')
 ]
