@@ -1,0 +1,6 @@
+python-3.7.3
+SQLite3
+request
+Django==3.0.2
+gunicorn
+django-heroku
