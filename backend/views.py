@@ -9,4 +9,4 @@ def index(request):
 def tent(request, country_name, city_name, tentID):
     # some JSON:
     x = '{ "countryName":' +country_name+', "cityName":'+city_name+', "tentID":'+str(tentID)+'}'
-    return HttpResponse("Tent Site Page {}:{}:{} /n {}".format(country_name, city_name, tentID, x))
+    return HttpResponse("Tent Site Page {}:{}:{} JSON: {}".format(country_name, city_name, tentID, x))
