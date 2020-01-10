@@ -4,3 +4,6 @@ from django.http import HttpResponse
 
 def index(request):
     return HttpResponse("Main Page")
+
+def tent(request, country_name, city_name, tentID):
+    return HttpResponse("Tent Site Page")
