@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 # Create your views here.
-import json
+
 
 def index(request):
     return HttpResponse("Main Page")
@@ -9,4 +9,4 @@ def index(request):
 def tent(request, country_name, city_name, tentID):
     # some JSON:
     x = '{ "countryName":' +country_name+', "cityName":'+city_name+', "tentID":'+str(tentID)+'}'
-    return HttpResponse("Tent Site Page {}:{}:{} /n {}".format(country_name, city_name, tentID, json.loads(x)))
+    return HttpResponse("Tent Site Page {}:{}:{} /n {}".format(country_name, city_name, tentID, x))

@@ -2,4 +2,3 @@ request
 Django
 gunicorn
 django-heroku
-json
