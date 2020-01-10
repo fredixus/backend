@@ -19,6 +19,10 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    
     path('', views.index),
     path('api/', include('api.urls')),
+
+    #ex.: /api/get/poland/cracow/5
+    path('api/get/<string:country_name>/<string:city_name>/<int:tentID>', views.tent, name='tent')
 ]
