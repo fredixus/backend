@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>API Documentation</title>
+    </head>
+    <body>
+        <h1>API functions</h1>
+        {% for function in ApiDocumentation %}
+        <div>
+            <h2>{{function.functionName}} : {{function.defType}}</h2>
+            <div>
+                <h3>
+                    Description:
+                </h3>
+                
+            </div>
+            <div>
+                <p>
+                    {{function.description}}
+                </p>
+            </div>
+            <div>
+                Tested: {{function.isTested}}
+            </div>
+        </div>
+        {% endfor %}
+    </body>
+</html>
