@@ -4,7 +4,11 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("Main Page")
+    try:
+        return render(request, "backend/main.html")
+    except Exception as e: 
+        return HttpResponse("Main Page " + str(e))
+    
 
 def tent(request, country_name, city_name, tentID):
     # some JSON:

@@ -66,7 +66,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         ### You need to add a local dir with new templates into the dirs
-        'DIRS': [os.path.join(BASE_DIR, "api/templates")],
+        'DIRS': [os.path.join(BASE_DIR, "api/templates"), os.path.join(BASE_DIR, "backend/templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
