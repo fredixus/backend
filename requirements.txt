@@ -2,3 +2,5 @@ request
 Django
 gunicorn
 django-heroku
+python-dotenv
+dj-database-url
