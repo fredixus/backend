@@ -1,0 +1,12 @@
+button {
+    padding: 1vh 2vw;
+    width: 25%;
+    font-weight: 600;
+    font-size: 1.1em;
+    border-radius: 10px;
+    border: none;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+}
