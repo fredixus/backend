@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.scss';
 import Login from './views/Login/Login'
+import Welcome from './views/Welcome'
 
 import {
     BrowserRouter as Router,
@@ -12,7 +13,8 @@ class App extends React.Component {
         return (
             <div className="App">
                 <Router>
-                    <Route path="/login" component={Login} />
+                    <Route exact path="/" component={Welcome} />
+                    <Route exact path="/login" component={Login} />
                 </Router>
             </div >
         );
