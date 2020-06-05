@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.scss';
 import Login from './views/Login/Login'
+import SignUp from './views/SignUp/SignUp'
 import Welcome from './views/Welcome'
+
 
 import {
     BrowserRouter as Router,
@@ -14,9 +16,10 @@ class App extends React.Component {
             <div className="App">
                 <Router>
                     <Route exact path="/" component={Welcome} />
-                    <Route exact path="/login" component={Login} />
+                    <Route path="/login" component={Login} />
+                    <Route path="/signup" component={SignUp} />
                 </Router>
-            </div >
+            </div>
         );
     }
 }
