@@ -8,7 +8,7 @@ class Login extends React.Component {
     render() {
         return (
             <div className="Login">
-                <div className="login-tab">
+                <div className="login-card">
                     <header className="header">
                         SIGN IN
                     </header>

@@ -1,9 +1,9 @@
-.Login {
+.SignUp {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    .login-card {
+    .signup-card {
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -28,10 +28,25 @@
             flex-direction: column;
             padding: 2.5vh;
             align-items: center;
+
             input {
-                width: 70%;
-                margin: 1vh;
+                box-sizing: border-box;
+                width: 80%;
                 padding: 1vh;
+                margin: 1vh 0;
+                border-radius: 5px;
+            }
+
+            div {
+                display: flex;
+                justify-content: space-between;
+                width: 80%;
+                input {
+                    box-sizing: border-box;
+                    width: 49%;
+                    margin: 1vh 0;
+                    padding: 1vh;
+                }
             }
         }
 
